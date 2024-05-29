@@ -1,0 +1,10 @@
+{% block content %}
+<h1>MenuList</h1>
+
+{% for menu in list %}
+<a href="{% url 'add_item' %}">Add</a>
+<h5>{{menu.name}}</h5>
+<h5>{{menu.price}}</h5>
+
+{% endfor %}
+{% endblock %}
